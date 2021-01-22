@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
+        <label htmlFor="nav-toggle" className="nav-toggle-label">
+          <span></span>
+        </label>
       </header>
+      <nav className="nav">
+            <ul className="nav-list">
+              <li><a href="/projects">Projects</a></li>
+              <li><a href="/cv">CV</a></li>
+              <li><a href="/about">About Me</a></li>
+            </ul>
+          </nav>
     </div>
   );
 }
