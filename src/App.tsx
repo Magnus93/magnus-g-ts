@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -16,6 +17,26 @@ function App() {
             <li><a href="/about">About Me</a></li>
           </ul>
         </nav>
+      </div>
+      <div className="content-parent">
+        <BrowserRouter>
+        <div className="content">
+            <Switch>
+              <Route path="/projects">
+                Projects stuff here!
+              </Route>
+              <Route path="/cv">
+                CV
+              </Route>
+              <Route path="/about">
+                About
+              </Route>
+              <Route path="/">
+                Projects
+              </Route>
+            </Switch>
+          </div>
+        </BrowserRouter>
       </div>
     </div>
   );
