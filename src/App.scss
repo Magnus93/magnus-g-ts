@@ -137,7 +137,7 @@ nav {
     display: grid;
     /*                    space  links           space  */
     grid-template-columns: 1fr minmax(34em, 1fr) 1fr;
-    box-shadow: var(--bx-shadow);
+    box-shadow: $bx-shadow;
   }
   .nav {
     all: unset;
@@ -163,7 +163,7 @@ nav {
   .content-parent {
     display: grid;
     grid-template-columns: 1fr minmax(300px, 900px) 1fr;
-    background: var(--clr-bg);
+    background: $clr-bg;
     height: 100vh;
     padding-top: 4em;
     margin: 0;
