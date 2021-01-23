@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ProjectsPage from './components/projects';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <div className="content">
             <Switch>
               <Route path="/projects">
-                Projects stuff here!
+                <ProjectsPage/>
               </Route>
               <Route path="/cv">
                 CV
@@ -32,7 +33,7 @@ function App() {
                 About
               </Route>
               <Route path="/">
-                Projects
+                <ProjectsPage/>
               </Route>
             </Switch>
           </div>
