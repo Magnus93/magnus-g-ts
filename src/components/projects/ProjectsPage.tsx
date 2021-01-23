@@ -19,9 +19,9 @@ class ProjectsPage extends React.Component {
                 return (<div key={index} className="container">
                     <div className="container__infodiv">
                         <h2>{proj.title}</h2>
-                        <div className="tagsdiv">
+                        <div className="container__infodiv__tagsdiv">
                             {proj.tags.map((tag, tag_index) => {
-                                return (<div key={"tag"+tag_index} onClick={this.filterProjects.bind(this, tag)}>
+                                return (<div key={"tag"+tag_index} onClick={this.filterProjects.bind(this, tag)} className={`tag`}>
                                     {tag}
                                 </div>);
                             })}
@@ -32,7 +32,7 @@ class ProjectsPage extends React.Component {
                                 {link.name}
                             </a></div>);
                         })}
-                        <p className="timeparagraph">{proj.time}</p>
+                        <p className="container__infodiv__time">{proj.time}</p>
                     </div>
                     <div className="container__imgdiv">
                         <img className="container__imgdiv__img" src={proj.image}/>
