@@ -127,6 +127,20 @@ nav {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+.content-parent {
+  background-color: $clr-bg;
+  height: 100vh;
+  padding-top: 4em;
+
+  .content {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+
 /* For Desktop */
 @media screen and (min-width: 40em) {
   .nav-toggle-label {
@@ -162,23 +176,23 @@ nav {
   /*  CONTENT STUFF  */
   .content-parent {
     display: grid;
+    padding-top: 3em;
     grid-template-columns: 1fr minmax(300px, 900px) 1fr;
     background: $clr-bg;
     height: 100vh;
-    padding-top: 4em;
+    padding-top: 5em;
     margin: 0;
-  }
 
-  .content {
-    margin: 0;
-    padding: 0;
-    grid-column: 2 / 3;
-    margin: 1em 0 0 0;
-    padding: 1em;
-    box-shadow: $bx-shadow;
-    border: $border;
-    h1 {
-      margin: 0;
+    .content {
+      padding: 1em;
+      grid-column: 2 / 3;
+      box-shadow: $bx-shadow;
+      border: $border;
+      h1 {
+        margin: 0;
+      }
     }
   }
+
+  
 }
