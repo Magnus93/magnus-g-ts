@@ -6,7 +6,7 @@ import bumptonormal from "./img/BumpNormalMap.png";
 import matrixscreen from "./img/matrixscreenshot.png";
 import flyingtree from "./img/flying-tree.png";
 import scottish from "./img/scottish.png";
-// import themechooser from "./img/theme-chooser.png";
+import themechooser from "./img/theme-chooser.png";
 import kronkgame from "./img/kronkgame.jpg";
 
 interface Link {
@@ -50,6 +50,17 @@ let projects : ProjectData[] = [
         image: stochsdwebpage,
         tags: ["React", "JavaScript", "HTML", "CSS"],
         desc: "Made StochSD's official webpage in React.",
+        time: "2019",
+        links: [{
+            "name": "Test it in Codepen",
+            "href": "https://codepen.io/MrArne/pen/OJPOzea"
+        }]
+    },
+    {
+        title: "Theme Chooser",
+        image: themechooser,
+        tags: ["JavaScript", "HTML", "CSS"],
+        desc: "Experimented in Codepen with CSS variables to select theme.",
         time: "2019",
         links: [{
             "name": "Test it in Codepen",
