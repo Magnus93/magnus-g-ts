@@ -6,7 +6,7 @@ import bumptonormal from "./img/BumpNormalMap.png";
 import matrixscreen from "./img/matrixscreenshot.png";
 import flyingtree from "./img/flying-tree.png";
 import scottish from "./img/scottish.png";
-import themechooser from "./img/theme-chooser.png";
+// import themechooser from "./img/theme-chooser.png";
 import kronkgame from "./img/kronkgame.jpg";
 
 interface Link {
@@ -14,7 +14,7 @@ interface Link {
     href : string
 }
 
-interface ProjectData {
+export interface ProjectData {
     title : string,
     image : string,
     tags : string[],

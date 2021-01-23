@@ -1,6 +1,12 @@
 import React from 'react';
-import projects from './project';
+import projects, { ProjectData } from './project';
 import './ProjectPage.scss';
+
+interface TagCounter {
+    tag: string,
+    keyword: string,
+    count: number 
+}
 
 class ProjectsPage extends React.Component {
 
@@ -9,8 +15,14 @@ class ProjectsPage extends React.Component {
         selectedTag: ""
     }
 
-    filterProjects() {
-        
+    filterProjects(keyword: string) {
+        let newProjs : ProjectData[] = projects;
+        let newKeyword : string = "";
+        if (keyword != "" && keyword != this.state.selectedTag) {
+            newProjs = projects.filter(proj => proj.tags.includes(keyword));
+            newKeyword = keyword;
+        }
+        this.setState({ projectData: newProjs, selectedTag: newKeyword });
     }
 
     renderProjects() {
@@ -21,7 +33,7 @@ class ProjectsPage extends React.Component {
                         <h2>{proj.title}</h2>
                         <div className="container__infodiv__tagsdiv">
                             {proj.tags.map((tag, tag_index) => {
-                                return (<div key={"tag"+tag_index} onClick={this.filterProjects.bind(this, tag)} className={`tag`}>
+                                return (<div key={"tag"+tag_index} onClick={this.filterProjects.bind(this, tag)} className={`tag ${this.state.selectedTag == tag ? "active" : ""}`}>
                                     {tag}
                                 </div>);
                             })}
