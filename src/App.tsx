@@ -3,6 +3,7 @@ import "./App.scss";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ProjectsPage from './components/projects';
 import CVPage from "./components/CVPage";
+import AboutPage from "./components/AboutPage";
 
 function App() {
   return (
@@ -30,10 +31,10 @@ function App() {
                 <CVPage/>
               </Route>
               <Route path="/about">
-                About
+                <AboutPage/>
               </Route>
               <Route path="/">
-                <ProjectsPage/>
+                <AboutPage/>
               </Route>
             </Switch>
         </BrowserRouter>
