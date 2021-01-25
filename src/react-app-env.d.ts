@@ -14,6 +14,8 @@ declare module '*.avif' {
   export default src;
 }
 
+declare module '*.pdf';
+
 declare module '*.bmp' {
   const src: string;
   export default src;

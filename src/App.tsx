@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ProjectsPage from './components/projects';
+import CVPage from "./components/CVPage";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
                 <ProjectsPage/>
               </Route>
               <Route path="/cv">
-                CV
+                <CVPage/>
               </Route>
               <Route path="/about">
                 About
