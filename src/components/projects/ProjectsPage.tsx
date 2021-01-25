@@ -78,7 +78,7 @@ class ProjectsPage extends React.Component {
     }
 
     render() {
-        return (<div>
+        return (<div className="content">
             <h1>Magnus Gustafsson</h1>
             <p>Hi, here are some projects made the last few years.</p>
             <div className="clicktags">

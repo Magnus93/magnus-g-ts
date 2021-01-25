@@ -13,15 +13,14 @@ function App() {
         </label>
         <nav className="nav">
           <ul className="nav-list">
+            <li><a href="/about">About Me</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/cv">CV</a></li>
-            <li><a href="/about">About Me</a></li>
           </ul>
         </nav>
       </div>
       <div className="content-parent">
         <BrowserRouter>
-        <div className="content">
             <Switch>
               <Route path="/projects">
                 <ProjectsPage/>
@@ -36,7 +35,6 @@ function App() {
                 <ProjectsPage/>
               </Route>
             </Switch>
-          </div>
         </BrowserRouter>
       </div>
     </div>

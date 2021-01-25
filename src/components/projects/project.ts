@@ -25,6 +25,13 @@ export interface ProjectData {
 
 let projects : ProjectData[] = [
     {
+        title: "Portfolio website",
+        image: "",
+        tags: ["React", "TypeScript", "Sass"],
+        desc: "Made a new protfolio website.",
+        time: "2021 Jan"
+    },
+    {
         title: "StochSD",
         image: stochsdimg,
         tags: ["JavaScript", "HTML", "CSS", "NW.js", "Node.js"],

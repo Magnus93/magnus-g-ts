@@ -1,4 +1,12 @@
 
+.content {
+    margin-top: 1em;
+    padding: 1em;
+    grid-column: 2 / 3;
+    h1 {
+      margin: 0;
+    }
+  }
 
 .container {
     padding-top: 2em;
