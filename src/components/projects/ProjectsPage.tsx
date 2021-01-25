@@ -21,7 +21,7 @@ class ProjectsPage extends React.Component {
         let reducer = (acc: TagCounter[], proj: ProjectData) => {
             proj.tags.forEach(tag => {
                 let index : number = acc.map(a => a.keyword).indexOf(tag);
-                if (index == -1) {
+                if (index === -1) {
                     // tag not included => add tag
                     acc.push({name: tag, keyword: tag, count: 1});
                 } else {
@@ -33,15 +33,13 @@ class ProjectsPage extends React.Component {
             return acc;
         };
         let allTags : TagCounter[] = projects.reduce(reducer, [{name: "All Projects", keyword: "", count: 0}]);
-        console.log(allTags);
-        
         return allTags;
     }
 
     filterProjects(keyword: string) {
         let newProjs : ProjectData[] = projects;
         let newKeyword : string = "";
-        if (keyword != "" && keyword != this.state.selectedTag) {
+        if (keyword !== "" && keyword !== this.state.selectedTag) {
             newProjs = projects.filter(proj => proj.tags.includes(keyword));
             newKeyword = keyword;
         }
@@ -56,21 +54,21 @@ class ProjectsPage extends React.Component {
                         <h2>{proj.title}</h2>
                         <div className="container__infodiv__tagsdiv">
                             {proj.tags.map((tag, tag_index) => {
-                                return (<div key={"tag"+tag_index} onClick={this.filterProjects.bind(this, tag)} className={`tag ${this.state.selectedTag == tag ? "active" : ""}`}>
+                                return (<div key={"tag"+tag_index} onClick={this.filterProjects.bind(this, tag)} className={`tag ${this.state.selectedTag === tag ? "active" : ""}`}>
                                     {tag}
                                 </div>);
                             })}
                         </div>
                         <p>{proj.desc}</p>
                         {proj.links?.map((link, link_index) => {
-                            return (<div key={link_index}><a href={link.href} target="_blank">
+                            return (<div key={link_index}><a href={link.href} target="_blank" rel="noreferrer">
                                 {link.name}
                             </a></div>);
                         })}
                         <p className="container__infodiv__time">{proj.time}</p>
                     </div>
                     <div className="container__imgdiv">
-                        <img className="container__imgdiv__img" src={proj.image}/>
+                        <img className="container__imgdiv__img" src={proj.image} alt={proj.title} />
                     </div>
                 </div>);
             })}
@@ -83,7 +81,7 @@ class ProjectsPage extends React.Component {
             <p>Hi, here are some projects made the last few years.</p>
             <div className="clicktags">
                 {this.tags.map((tag, tag_index) => {
-                    return (<div  key={tag_index} className={`clicktags__tag tag ${this.state.selectedTag == tag.keyword ? "active": ""}`} onClick={this.filterProjects.bind(this, tag.keyword)}>
+                    return (<div  key={tag_index} className={`clicktags__tag tag ${this.state.selectedTag === tag.keyword ? "active": ""}`} onClick={this.filterProjects.bind(this, tag.keyword)}>
                         <span className="tagname">{tag.name}</span> &nbsp;<span className="tagcount">{tag.count}</span>
                     </div>);
                 })}
