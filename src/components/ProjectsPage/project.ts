@@ -30,7 +30,7 @@ let projects : ProjectData[] = [
         image: portfoliopage,
         tags: ["React", "TypeScript", "Sass"],
         desc: "This portfolio webpage was made by me.",
-        time: "2021 Jan"
+        time: "2021 Feb"
     },
     {
         title: "StochSD",

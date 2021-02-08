@@ -1,6 +1,9 @@
 import React from 'react';
 import projects, { ProjectData } from './project';
 import './ProjectPage.scss';
+// get our fontawesome imports
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface TagCounter {
     name: string,
@@ -61,8 +64,8 @@ class ProjectsPage extends React.Component {
                         </div>
                         <p>{proj.desc}</p>
                         {proj.links?.map((link, link_index) => {
-                            return (<div key={link_index}><a href={link.href} target="_blank" rel="noreferrer">
-                                {link.name}
+                            return (<div key={link_index} className="project-link-div"><a href={link.href} target="_blank" rel="noreferrer">
+                                {link.name} <FontAwesomeIcon icon={faExternalLinkAlt} />
                             </a></div>);
                         })}
                         <p className="container__infodiv__time">{proj.time}</p>
@@ -80,6 +83,7 @@ class ProjectsPage extends React.Component {
             <h1>Magnus Gustafsson</h1>
             <p>Hi, here are some projects made the last few years.</p>
             <div className="clicktags">
+                Filter:<br/>
                 {this.tags.map((tag, tag_index) => {
                     return (<div  key={tag_index} className={`clicktags__tag tag ${this.state.selectedTag === tag.keyword ? "active": ""}`} onClick={this.filterProjects.bind(this, tag.keyword)}>
                         <span className="tagname">{tag.name}</span> &nbsp;<span className="tagcount">{tag.count}</span>

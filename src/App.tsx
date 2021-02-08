@@ -29,7 +29,7 @@ function App() {
                 <AboutPage/>
               </Route>
               <Route path="/">
-                <AboutPage/>
+                <ProjectsPage/>
               </Route>
             </Switch>
         </BrowserRouter>
