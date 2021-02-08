@@ -72,7 +72,7 @@ let projects : ProjectData[] = [
         time: "2019",
         links: [{
             "name": "Test it in Codepen",
-            "href": "https://codepen.io/MrArne/pen/OJPOzea"
+            "href": "https://codepen.io/MrArne/pen/WNbXGmB"
         }]
     },
     {

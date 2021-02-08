@@ -80,9 +80,9 @@ class ProjectsPage extends React.Component {
 
     render() {
         return (<div className="content">
-            <h1>Magnus Gustafsson</h1>
-            <p>Hi, here are some projects made the last few years.</p>
-            <div className="clicktags">
+            <h1 className="mobilepadding">Magnus Gustafsson</h1>
+            <p  className="mobilepadding">Hi, here are some projects made the last few years.</p>
+            <div className="clicktags mobilepadding">
                 Filter:<br/>
                 {this.tags.map((tag, tag_index) => {
                     return (<div  key={tag_index} className={`clicktags__tag tag ${this.state.selectedTag === tag.keyword ? "active": ""}`} onClick={this.filterProjects.bind(this, tag.keyword)}>
