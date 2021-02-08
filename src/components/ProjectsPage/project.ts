@@ -1,4 +1,5 @@
 import stochsdimg from './img/stochsd.png';
+import portfoliopage from './img/portfolio-page-2021.png';
 import stochsdwebpage from "./img/stochsd-webpage.png";
 import oldportfolioimg from "./img/old-portfolio.jpg";
 import python3d2dimg from "./img/3d-to-2d-python.jpg";
@@ -26,9 +27,9 @@ export interface ProjectData {
 let projects : ProjectData[] = [
     {
         title: "Portfolio website",
-        image: "",
+        image: portfoliopage,
         tags: ["React", "TypeScript", "Sass"],
-        desc: "Made a new protfolio website.",
+        desc: "This portfolio webpage was made by me.",
         time: "2021 Jan"
     },
     {

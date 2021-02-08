@@ -5,7 +5,7 @@ import cvPdf from './cv_magnus_gustafsson_sans_refs.pdf';
 class CVPage extends React.Component {
     render() {
         return (<div className="cv-content">
-            <iframe src={cvPdf} />
+            <iframe src={cvPdf} title="Magnus Gustafsson - CV" />
         </div>);
     }
 }

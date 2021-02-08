@@ -1,11 +1,48 @@
 import React from 'react';
+import './AboutPage.scss';
+import githubIcon from './svg/github-icon.svg';
+import linkedinIcon from './svg/linkedin-icon.svg';
+import mailIcon from './svg/mail-icon.svg';
 
+interface Link {
+    icon: string,
+    name: string,
+    href: string
+}
+
+let links : Link[] = [
+    {
+        icon: linkedinIcon,
+        name: "LinkedIn/in/magnus-g",
+        href: "https://www.linkedin.com/in/magnus-g/"
+    },
+    {
+        icon: githubIcon,
+        name: "GitHub.com/Magnus93",
+        href: "https://github.com/Magnus93"
+    },
+    {
+        icon: mailIcon,
+        name: "magnus.ja.gustafsson@gmail.com",
+        href: "mailto:magnus.ja.gustafsson@gmail.com"
+    }
+];
+
+
+const birth : any = new Date('May 11, 1993 16:10:00');
+const age : number = Math.floor((Date.now() - birth)/ (1000 * 60 * 60 * 24 * 365));
 
 class AboutPage extends React.Component {
     render() {
         return (<div className="content">
             <h1>Magnus Gustafsson</h1>
-            <p>Jag är en matematisk inriktad civilingenjör i informationsteknologi som gillar att lösa problem. Speciellt tycker jag om att bygga användbara och användarvänliga system, gärna i samarbete med andra. </p>
+            <p>Magnus is a {age}-year old, graduated 2020 at MSc. in Computer and Information Engineering at Uppsala University, Sweden.</p>
+            {links.map(l => {
+                return (<a key={l.name} href={l.href} className="link" target="_blank" rel="noreferrer">
+                    <img src={l.icon} className="link__img" alt={l.name}/>
+                    <span className="link__name">{l.name}</span>
+                </a>);
+            })}
         </div>);
     }
 }

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16px"
+   height="16px"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="SVGRoot"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="linkedin-icon.svg">
+  <defs
+     id="defs854" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="32"
+     inkscape:cx="11.063855"
+     inkscape:cy="8.6252919"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:grid-bbox="true" />
+  <metadata
+     id="metadata857">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-opacity:0.84343433;fill-rule:nonzero;stroke:none;stroke-width:0.05907741;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 1.7618508,0.24865849 c -0.8047637,0 -1.45263435,0.64787066 -1.45263435,1.45263541 V 14.301874 c 0,0.804764 0.64787065,1.452637 1.45263435,1.452637 H 14.174863 c 0.804763,0 1.452636,-0.647873 1.452636,-1.452637 V 1.7012939 c 0,-0.80476475 -0.647873,-1.45263541 -1.452636,-1.45263541 z M 3.6369491,2.3857561 A 1.3421155,1.3421155 0 0 1 4.9790084,3.7278759 1.3421155,1.3421155 0 0 1 3.6369491,5.069937 1.3421155,1.3421155 0 0 1 2.2948302,3.7278759 1.3421155,1.3421155 0 0 1 3.6369491,2.3857561 Z m 7.0190059,3.4508871 c 0.661052,0.00742 1.306874,0.2349711 1.784917,0.6187039 0.568201,0.456104 0.767148,1.2812783 0.808653,2.0883113 l -0.0079,0.5210709 v 0 4.2552677 H 10.983672 V 9.136474 c 0,-1.692594 -2.5263438,-1.8624509 -2.5263438,0.2203589 V 13.312121 H 8.3546915 v 0.0079 H 6.1993987 V 5.9857467 H 8.3546915 V 7.0352155 C 8.9308764,6.1814002 9.8059903,5.8271028 10.655914,5.8366416 Z M 2.4889326,5.9857477 H 4.7783717 V 13.319997 H 2.4889326 Z"
+       id="rect838" />
+    <rect
+       y="5.9857607"
+       x="-18.037573"
+       height="7.3342667"
+       width="2.2894909"
+       id="rect845"
+       style="fill:#ffcd12;fill-opacity:0.36363639;fill-rule:nonzero;stroke:none;stroke-width:0.05617203;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+    <circle
+       r="1.3421156"
+       cy="3.7278471"
+       cx="-16.889557"
+       id="circle847"
+       style="fill:#ff0000;fill-opacity:0.43434347;fill-rule:nonzero;stroke:none;stroke-width:0.06521535;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+    <path
+       sodipodi:nodetypes="ccccccccccccsccc"
+       inkscape:connector-curvature="0"
+       id="path849"
+       d="m -14.327034,5.9857477 v 7.3342493 h 2.155297 v -0.0079 h 0.102637 v -3.95525 c 0,-2.0828095 2.5263433,-1.9129524 2.5263433,-0.2203586 v 4.1835246 h 2.2578734 V 9.0647345 h 6.2e-5 l 0.00793,-0.5210688 C -7.3183828,7.736631 -7.5173557,6.9114304 -8.0855582,6.4553269 -9.1782251,5.5782256 -11.147366,5.5173289 -12.171689,7.0352214 v -1.049464 z"
+       style="fill:#ff00ff;fill-opacity:0.36363639;fill-rule:nonzero;stroke:none;stroke-width:0.05450075;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke" />
+  </g>
+</svg>

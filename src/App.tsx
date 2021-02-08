@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import ProjectsPage from './components/projects';
-import CVPage from "./components/CVPage";
+import ProjectsPage from './components/ProjectsPage';
 import AboutPage from "./components/AboutPage";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
           <ul className="nav-list">
             <li><a href="/about">About Me</a></li>
             <li><a href="/projects">Projects</a></li>
-            <li><a href="/cv">CV</a></li>
           </ul>
         </nav>
       </div>
@@ -26,9 +24,6 @@ function App() {
             <Switch>
               <Route path="/projects">
                 <ProjectsPage/>
-              </Route>
-              <Route path="/cv">
-                <CVPage/>
               </Route>
               <Route path="/about">
                 <AboutPage/>
