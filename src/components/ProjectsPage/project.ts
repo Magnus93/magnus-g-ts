@@ -28,7 +28,7 @@ let projects : ProjectData[] = [
     {
         title: "Portfolio website",
         image: portfoliopage,
-        tags: ["React", "TypeScript", "Sass"],
+        tags: ["React", "TypeScript", "SCSS"],
         desc: "This portfolio webpage was made by me.",
         time: "2021 Feb"
     },
