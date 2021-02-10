@@ -29,7 +29,7 @@ let projects : ProjectData[] = [
         title: "Portfolio website",
         image: portfoliopage,
         tags: ["React", "TypeScript", "SCSS"],
-        desc: "This portfolio webpage was made by me.",
+        desc: "This portfolio webpage was made by me. It is a responsive website that changes for smaller screens. This can be tested in the browser by making the browser narrower.",
         time: "2021 Feb"
     },
     {
