@@ -128,7 +128,6 @@ nav {
 }
 
 .content-parent {
-  background-color: $clr-bg;
   padding-top: 4em;
 }
 
@@ -177,7 +176,6 @@ nav {
     display: grid;
     margin-top: 4em;
     grid-template-columns: 1fr minmax(300px, 900px) 1fr;
-    background: $clr-bg;
     margin: 0;
   }
 }
