@@ -11,6 +11,7 @@ class App extends React.Component<{}, {theme: string}> {
     this.state = {
       theme: theme ? theme : 'light'
     };
+    localStorage.setItem('theme', this.state.theme);
   }
 
   toogleTheme() {
@@ -19,11 +20,12 @@ class App extends React.Component<{}, {theme: string}> {
       theme = 'dark';
     }
     this.setState({'theme': theme});
+    localStorage.setItem('theme', theme);
   }
 
   render() {
     return (
-      <div className={`App ${this.state.theme}`}>
+      <div className={`App ${this.state.theme}Theme`}>
         <div className="header">
           <input type="checkbox" id="nav-toggle" className="nav-toggle" />
           <label htmlFor="nav-toggle" className="nav-toggle-label">
