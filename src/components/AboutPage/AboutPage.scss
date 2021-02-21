@@ -3,7 +3,7 @@
     background-image: url(../../public/img/magnus_crop_greyscale.png);
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-size: 20em auto;
     min-height: Max( calc( 100vh - 4em ) , 50em ) ;
 }
@@ -20,13 +20,11 @@
     margin: 2em 0em;
     align-items: center;
     text-decoration: none;
-    
     border-radius: 1em;
     transition: all;
     transition-duration: 350ms;
     color: var(--clr-text-hard);
     background: var(--clr-bg-hard);
-    opacity: 0.95;
     border: 1px solid #ddd;
 
     &:hover, &:focus {
