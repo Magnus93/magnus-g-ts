@@ -8,6 +8,11 @@
     min-height: Max( calc( 100vh - 4em ) , 50em ) ;
 }
 
+
+@function inverts($value) {
+    @return #{ "invert(" + $value + ")" };
+}
+
 .link {
     display: flex;
     height: 3em;
@@ -15,11 +20,13 @@
     margin: 2em 0em;
     align-items: center;
     text-decoration: none;
-    color: black;
+    
     border-radius: 1em;
     transition: all;
     transition-duration: 350ms;
-    background: rgba(255, 255, 255, 0.6);
+    color: var(--clr-text-hard);
+    background: var(--clr-bg-hard);
+    opacity: 0.95;
     border: 1px solid #ddd;
 
     &:hover, &:focus {
@@ -30,6 +37,7 @@
     &__img {
         height: 100%;
         margin: 1em;
+        filter: inverts(var(--invert-svg));
     }
 
     &__name {

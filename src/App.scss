@@ -8,6 +8,7 @@
   --clr-shadow: rgba(255, 255, 255, 0.0);
   --bx-shadow: 0px 3px 8px var(--clr-shadow);
   --border: 1px solid #222;
+  --invert-svg: 1;
 }
 
 .lightTheme {
@@ -19,6 +20,7 @@
   --clr-shadow: rgba(0, 0, 0, 0.1);
   --bx-shadow: 0px 3px 8px var(--clr-shadow);
   --border: 1px solid #f0f0f0;
+  --invert-svg: 0;
 }
 
 body {
