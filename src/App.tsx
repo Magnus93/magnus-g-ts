@@ -6,12 +6,15 @@ import AboutPage from "./components/AboutPage";
 import darkmodeIcon from "./public/img/darkmode-icon.svg";
 import lightmodeIcon from "./public/img/lightmode-icon.svg";
 
+
+let defaultTheme: string = 'light';
+
 class App extends React.Component<{}, {theme: string}> {
   constructor(props : any) {
     super(props);
     let theme : any = localStorage.getItem('theme');
     this.state = {
-      theme: theme ? theme : 'light'
+      theme: theme ? theme : defaultTheme
     };
     localStorage.setItem('theme', this.state.theme);
   }
