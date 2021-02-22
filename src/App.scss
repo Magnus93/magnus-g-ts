@@ -144,26 +144,29 @@ nav {
   transition: transform 500ms ease-in-out;
   box-shadow: var(--bx-shadow);
   border: var(--border);
-  ul {
+  
+  .nav-list {
     margin: 0;
     padding: 0;
     text-align: left;
-    list-style: none;
-    left: 0;
-  }
-  li {
-    margin: 1em;
-  }
-  a {
-    color: var(--clr-text-soft);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
-  }
-  a:hover {
-    text-decoration: underline;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: opacity 150ms ease-in;
+      font-size: 1.5em;
+      // background-color: red;
+      color: var(--clr-text-hard);
+      height: 100%;
+      display: block;
+      opacity: 0;
+      padding: 0.4em 0.8em;
+
+      &:hover {
+        background-color: var(--clr-bg-soft);
+      }
+    }
+
   }
 }
 
@@ -201,7 +204,25 @@ nav {
     grid-column: 2 / 3;
     display: flex;
     justify-content: space-around;
+
     .nav-list {
+      all: unset;
+      display: flex;
+
+      a {
+        opacity: 1;
+        padding: 0em 1.5em;
+        display: table;
+
+        span {
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+      }
+    }
+
+    /*.nav-list {
       display: flex;
       width: 100%;
       justify-content: space-evenly;
@@ -213,7 +234,7 @@ nav {
     a {
       opacity: 1;
       font-size: 1.5em;
-    }
+    }*/
   }
 
   /*  CONTENT STUFF  */
