@@ -1,6 +1,7 @@
 import stochsdimg from './img/stochsd.png';
 import portfoliopage from './img/portfolio-page-2021.png';
 import stochsdwebpage from "./img/stochsd-webpage.png";
+import greykeepimg from "./img/greykeep.png";
 import oldportfolioimg from "./img/old-portfolio.jpg";
 import python3d2dimg from "./img/3d-to-2d-python.jpg";
 import bumptonormal from "./img/BumpNormalMap.png";
@@ -69,6 +70,17 @@ let projects : ProjectData[] = [
         links: [{
             "name": "Test it in Codepen",
             "href": "https://codepen.io/MrArne/pen/WNbXGmB"
+        }]
+    },
+    {
+        title: "GreyKeep Firefox Addon",
+        image: greykeepimg,
+        tags: ["JavaScript"],
+        desc: "Firefox addon that changes background in Google Keep from white to a light grey. I prefered to have some contrast between background and the notes so I added it for myself.",
+        time: "2018 Oct",
+        links: [{
+            "name": "GreyKeep",
+            "href": "https://addons.mozilla.org/en-US/firefox/addon/greykeep/"
         }]
     },
     {
