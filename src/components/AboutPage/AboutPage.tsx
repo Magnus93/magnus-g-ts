@@ -41,8 +41,8 @@ class AboutPage extends React.Component {
         <div className="content">
           <h1>Magnus Gustafsson</h1>
           <p>
-            Magnus is a {age}-year old and graduated 2020 at MSc. in Computer
-            and Information Engineering at Uppsala University, Sweden.
+            {age}-year old and graduated 2020 at MSc. in Computer
+            and Information Engineering at Uppsala University, Sweden. Currently working as a Software Developer at Intergiro Intl AB in Uppsala.
           </p>
           {links.map((l) => {
             return (
