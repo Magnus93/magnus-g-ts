@@ -82,6 +82,9 @@
     "webpack-manifest-plugin": "2.2.0",
     "workbox-webpack-plugin": "5.1.4"
   },
+  "devDependencies": {
+    "nodemon": "2.0.15"
+  },
   "scripts": {
     "start-old": "node scripts/start.js",
     "start": "node server/server.js",

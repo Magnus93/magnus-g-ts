@@ -14,7 +14,7 @@
     left: 0;
     width: 20em;
     height: 20em;
-    &::after {
+    &::before {
         content: url(../../public/img/glasses.png);
         position: absolute;
         bottom: 10.5em;
@@ -24,10 +24,17 @@
         transform: scale(0.18);
         transition: 1000ms;
     }
-    &:not(:hover)::after {
+    &:not(:hover)::before {
         opacity: 0;
         transform: translateX(100vh) scale(0.18);
         transition-timing-function: ease-out;
+    }
+    &::after {
+        content: "";
+        inset: 0;
+        position: absolute;
+        filter: blur(2em);
+        // background-color: red;
     }
 }
 
@@ -39,27 +46,45 @@
     display: flex;
     height: 3em;
     padding: 1em 0.0em;
-    margin: 2em 0em;
     align-items: center;
     text-decoration: none;
     border-radius: 1em;
     transition: all;
     transition-duration: 350ms;
     color: var(--clr-text-hard);
-    background: var(--clr-bg-hard);
-    border: 1px solid #ddd;
-
-    &:hover, &:focus {
-        box-shadow: 0px 3px 8px rgba(0, 0,0, 0.2);
-        transform: scale(1.01);
+    width: fit-content;
+    border: 1px solid transparent;
+    background-image: var(--gradient);
+    background-clip: text;
+    span {
+        position: relative;
     }
-
+    &:focus, &:hover {
+        color: transparent;
+    }
+    span::before {
+        z-index: 0;
+        content: "";
+        position: absolute;
+        bottom: -0.25em;
+        height: 0.1em;
+        background: var(--gradient);
+        width: 100%;
+        transform: scaleX(0);
+        transition: transform 350ms ease-out;
+        transform-origin: right;
+    }
+    &:hover > span::before, 
+    &:focus > span::before {
+        width: 100%;
+        transform: scaleX(1);
+        transform-origin: left;
+    }
     &__img {
         height: 100%;
         margin: 1em;
         filter: inverts(var(--invert-svg));
     }
-
     &__name {
         font-size: 1em;
     }
@@ -69,7 +94,7 @@
 /* For Desktop */
 @media screen and (min-width: 40em) {
     .link {
-        padding: 1em 2em;
+        margin: 1em 2em;
 
         &__name {
             font-size: 1.5em;

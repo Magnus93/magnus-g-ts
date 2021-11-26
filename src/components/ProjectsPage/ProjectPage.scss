@@ -72,13 +72,35 @@
 
 .project-link-div {
     margin: 0.5em 1em;
-
+    background-image: var(--gradient);
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
     & > a {
         text-decoration: none;
         color: var(--clr-text-hard);
-
+        position: relative;
+        transition: all;
+        transition-duration: 350ms;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -0.1em;
+            height: 0.1em;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 350ms;
+            transform-origin: right;
+        }
         &:hover {
-            text-decoration: underline;
+            // color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
         }
     }
 }

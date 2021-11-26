@@ -77,9 +77,7 @@ class ProjectsPage extends React.Component {
                 {proj.links?.map((link, link_index) => {
                   return (
                     <div key={link_index} className="project-link-div">
-                      <a href={link.href} target="_blank" rel="noreferrer">
-                        {link.name} <FontAwesomeIcon icon={faExternalLinkAlt} />
-                      </a>
+                      <a href={link.href} target="_blank" rel="noreferrer">{link.name}</a>
                     </div>
                   );
                 })}
