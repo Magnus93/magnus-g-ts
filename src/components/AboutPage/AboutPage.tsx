@@ -36,6 +36,7 @@ class AboutPage extends React.Component {
     render() {
         return (
           <div className="content-parent magnus-face">
+            <div className="glasses-hover"></div>
             <div className="content">
               <h1>Magnus Gustafsson</h1>
               <p>
