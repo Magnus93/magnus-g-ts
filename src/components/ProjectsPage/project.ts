@@ -40,10 +40,6 @@ let projects : ProjectData[] = [
         time: "2018 - 2020",
         links: [
             {
-                name: "StochSD Homepage",
-                href: "https://stochsd.sourceforge.io/homepage/#/",
-            },
-            {
                 name: "StochSD Source Code",
                 href: "https://github.com/stochsd/stochsd/",
             },
@@ -60,8 +56,8 @@ let projects : ProjectData[] = [
         desc: "Made StochSD's official webpage in React.",
         time: "2019",
         links: [{
-            "name": "Test it in Codepen",
-            "href": "https://codepen.io/MrArne/pen/OJPOzea"
+            "name": "StochSD Homepage",
+            "href": "https://stochsd.sourceforge.io/homepage/#/"
         }]
     },
     {
