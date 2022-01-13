@@ -13,7 +13,6 @@ class App extends React.Component<{}, {theme: string}> {
     this.state = {
       theme: theme ? theme : "light"
     };
-    localStorage.setItem("theme", this.state.theme)
   }
 
   toogleTheme() {
@@ -22,6 +21,7 @@ class App extends React.Component<{}, {theme: string}> {
       theme = "dark";
     }
     this.setState({"theme": theme});
+    localStorage.setItem("theme", theme)
   }
 
   render() {
