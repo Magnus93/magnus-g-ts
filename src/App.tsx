@@ -19,7 +19,7 @@ function App() {
           </ul>
         </nav>
       </div>
-      <div className="content-parent">
+      <div>
         <BrowserRouter>
             <Switch>
               <Route path="/projects">

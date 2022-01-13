@@ -1,3 +1,11 @@
+.magnus-face {
+    background-image: url(../ProjectsPage/img/magnus_crop_greyscale.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 20em auto;
+    min-height: Max( calc( 100vh - 4em ) , 50em ) ;
+}
 
 .link {
     display: flex;
@@ -10,7 +18,7 @@
     border-radius: 1em;
     transition: all;
     transition-duration: 350ms;
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
     border: 1px solid #ddd;
 
     &:hover, &:focus {
