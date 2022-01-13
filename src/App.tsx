@@ -7,23 +7,24 @@ import AboutPage from "./components/AboutPage";
 class App extends React.Component<{}, {theme: string}> {
   constructor(props : any) {
     super(props);
-    let theme : any = localStorage.getItem('theme');
+    let theme : any = localStorage.getItem("theme");
     this.state = {
-      theme: theme ? theme : 'light'
+      theme: theme ? theme : "light"
     };
+    localStorage.setItem("theme", this.state.theme)
   }
 
   toogleTheme() {
-    let theme : string = 'light';
-    if (this.state.theme === 'light') {
-      theme = 'dark';
+    let theme : string = "light";
+    if (this.state.theme === "light") {
+      theme = "dark";
     }
-    this.setState({'theme': theme});
+    this.setState({"theme": theme});
   }
 
   render() {
     return (
-      <div className={`App ${this.state.theme}`}>
+      <div className={`App ${this.state.theme}Theme`}>
         <div className="header">
           <input type="checkbox" id="nav-toggle" className="nav-toggle" />
           <label htmlFor="nav-toggle" className="nav-toggle-label">

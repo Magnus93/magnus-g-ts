@@ -1,29 +1,48 @@
-$clr-nav: rgba(255, 255, 255, 1);
-$clr-bg: white;
-$clr-text-soft: #444;
-$clr-text-hard: black;
-$clr-shadow: rgba(0, 0, 0, 0.1);
-$bx-shadow: 0px 3px 8px $clr-shadow;
-$border: 1px solid #f0f0f0;
+.darkTheme {
+  --clr-nav: black;
+  --clr-bg: black;
+  --clr-text-soft: #aaa;
+  --clr-text-hard: white;
+  --clr-shadow: rgba(255, 255, 255, 0.50);
+  --bx-shadow: 0px 3px 8px var(--clr-shadow);
+  --border: 1px solid #222;
+}
+
+.lightTheme {
+  --clr-nav: rgba(255, 255, 255, 1);
+  --clr-bg: white;
+  --clr-text-soft: #444;
+  --clr-text-hard: black;
+  --clr-shadow: rgba(0, 0, 0, 0.1);
+  --bx-shadow: 0px 3px 8px var(--clr-shadow);
+  --border: 1px solid #f0f0f0;
+}
 
 body {
-  color: $clr-text-soft;
   margin: 0;
   padding: 0;
 }
-
+.App {
+  background: var(--clr-bg);
+  color: var(--clr-text-soft);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 p {
-  color: $clr-text-soft;
+  color: var(--clr-text-soft);
 }
 
 .header {
-  background: $clr-nav;
+  background: var(--clr-nav);
   height: 4em;
   text-align: center;
   position: fixed;
   z-index: 30;
   width: 100%;
-  border: $border;
+  border: var(--border);
 }
 
 .nav-toggle {
@@ -46,7 +65,7 @@ p {
     width: 2em;
     height: 3px;
     position: relative;
-    background: $clr-text-hard;
+    background: var(--clr-text-hard);
     transition: transform 350ms ease-in-out;
   }
   span::after,
@@ -85,7 +104,7 @@ input.nav-toggle:checked ~ label {
 }
 
 nav {
-  background: $clr-nav;
+  background: var(--clr-nav);
   position: absolute;
   text-align: center;
   width: 100%;
@@ -96,8 +115,8 @@ nav {
   z-index: -4;
   transform-origin: top;
   transition: transform 500ms ease-in-out;
-  box-shadow: $bx-shadow;
-  border: $border;
+  box-shadow: var(--bx-shadow);
+  border: var(--border);
   ul {
     margin: 0;
     padding: 0;
@@ -109,7 +128,7 @@ nav {
     margin: 1em;
   }
   a {
-    color: $clr-text-soft;
+    color: var(--clr-text-soft);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -127,7 +146,7 @@ nav {
 }
 
 .content-parent {
-  background-color: $clr-bg;
+  background-color: var(--clr-bg);
   padding-top: 4em;
 }
 
@@ -149,7 +168,7 @@ nav {
     display: grid;
     /*                    space  links           space  */
     grid-template-columns: 1fr minmax(34em, 1fr) 1fr;
-    box-shadow: $bx-shadow;
+    box-shadow: var(--bx-shadow);
   }
   .nav {
     all: unset;
