@@ -4,15 +4,25 @@
     padding: 0em;
     grid-column: 2 / 3;
     h1 {
-      margin: 0;
+        margin: 0;
     }
   }
 
 .container {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border-top: 2px dashed var(--clr-bg-soft);
+    &::before {
+        content: "";
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, hsl(0deg, 0, 50%) 50%, rgba(255,255,255,0) 100%);
+        height: 2px;
+        display: block;
+        position: relative;
 
+        $widths: 90%;
+        width: $widths;
+        margin-left: calc(( 100% - #{$widths} ) / 2 );
+
+        margin-top: 3.5em;
+        margin-bottom: 3em;
+    }
     &__infodiv {
         padding-left: 1em;
         padding-right: 1em;
@@ -25,7 +35,6 @@
             margin: 0.2em;
         }
     }
-
     &__imgdiv {
         height: min-content;
         &__img {
@@ -77,15 +86,16 @@
     .container {
         display: flex; 
         flex-direction: row-reverse;
-        margin: 1em 0em;
+        margin: 5em 0em;
         border: none;
-
+        &::before {
+            content: none;
+        }
         &__infodiv {
             width: 50%;
             box-sizing: border-box;
             padding: 0em 1em;
         }
-
         &__imgdiv {
             width: 50%;
             box-sizing: border-box;
