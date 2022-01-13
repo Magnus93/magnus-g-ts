@@ -29,6 +29,8 @@ body {
   background: var(--clr-bg-hard);
   color: var(--clr-text-soft);
   min-height: 100vh;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
 }
 
 @function inverts($value) {
