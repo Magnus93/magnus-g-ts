@@ -30,6 +30,25 @@ body {
   color: var(--clr-text-soft);
   min-height: 100vh;
 }
+
+@function inverts($value) {
+  @return #{ "invert(" + $value + ")" };
+}
+
+.theme-toogle {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 6em;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  img {
+    height: 2em;
+    filter: inverts(var(--invert-svg));
+  }
+}
+
 p {
   color: var(--clr-text-soft);
 }

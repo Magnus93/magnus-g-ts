@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.scss";
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import ProjectsPage from './components/ProjectsPage';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import ProjectsPage from "./components/ProjectsPage";
 import AboutPage from "./components/AboutPage";
+import darkmodeIcon from "./public/img/darkmode-icon.svg";
+import lightmodeIcon from "./public/img/lightmode-icon.svg";
 
 class App extends React.Component<{}, {theme: string}> {
   constructor(props : any) {
@@ -36,7 +38,9 @@ class App extends React.Component<{}, {theme: string}> {
               <li><a href="/projects">Projects</a></li>
             </ul>
           </nav>
-          <button onClick={this.toogleTheme.bind(this)}>Change Theme</button>
+          <button className="theme-toogle" onClick={this.toogleTheme.bind(this)}>
+            <img src={this.state.theme === "light" ? darkmodeIcon : lightmodeIcon}/>
+          </button>
         </div>
         <div>
           <BrowserRouter>
