@@ -56,7 +56,7 @@ let projects : ProjectData[] = [
     {
         title: "StochSD Homepage",
         image: stochsdwebpage,
-        tags: ["React", "JavaScript", "HTML", "CSS"],
+        tags: ["React", "JavaScript", "CSS"],
         desc: "Made StochSD's official webpage in React.",
         time: "2019",
         links: [{
@@ -78,7 +78,7 @@ let projects : ProjectData[] = [
     {
         title: "Old Portfolio website",
         image: oldportfolioimg,
-        tags: ["PHP", "JavaScript", "CSS", "JSON"],
+        tags: ["PHP", "CSS", "JSON"],
         desc: "The website is hosted for free on herokuapp and therefore takes a few seconds to load.",
         time: "2017",
         links: [
