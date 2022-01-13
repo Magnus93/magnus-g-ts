@@ -36,7 +36,7 @@ class AboutPage extends React.Component {
     render() {
         return (<div className="content">
             <h1>Magnus Gustafsson</h1>
-            <p>Magnus is a {age}-year olda and graduated 2020 at MSc. in Computer and Information Engineering at Uppsala University, Sweden.</p>
+            <p>Magnus is a {age}-year old and graduated 2020 at MSc. in Computer and Information Engineering at Uppsala University, Sweden.</p>
             {links.map(l => {
                 return (<a key={l.name} href={l.href} className="link" target="_blank" rel="noreferrer">
                     <img src={l.icon} className="link__img" alt={l.name}/>
