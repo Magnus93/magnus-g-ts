@@ -3,6 +3,7 @@ import portfoliopage from './img/portfolio-page-2021.png';
 import stochsdwebpage from "./img/stochsd-webpage.png";
 import oldportfolioimg from "./img/old-portfolio.jpg";
 import python3d2dimg from "./img/3d-to-2d-python.jpg";
+import greykeepimg from "./img/greykeep.png";
 import bumptonormal from "./img/BumpNormalMap.png";
 import matrixscreen from "./img/matrixscreenshot.png";
 import flyingtree from "./img/flying-tree.png";
@@ -28,8 +29,8 @@ let projects : ProjectData[] = [
     {
         title: "Portfolio website",
         image: portfoliopage,
-        tags: ["React", "TypeScript", "Sass"],
-        desc: "This portfolio webpage was made by me.",
+        tags: ["React", "TypeScript", "SCSS"],
+        desc: "This portfolio webpage was made by me. It is a responsive website that changes for smaller screens. This can be tested in the browser by making the browser narrower. The webpage also includes a dark mode. you can try it by clicking in the top right corner.",
         time: "2021 Feb"
     },
     {
@@ -39,10 +40,6 @@ let projects : ProjectData[] = [
         desc: "I continued development on a Open Source Visual Programming Language for Stochastic System Dynamics. I worked to remove bugs and make the program more pedagogical.",
         time: "2018 - 2020",
         links: [
-            {
-                name: "StochSD Homepage",
-                href: "https://stochsd.sourceforge.io/homepage/#/",
-            },
             {
                 name: "StochSD Source Code",
                 href: "https://github.com/stochsd/stochsd/",
@@ -56,12 +53,12 @@ let projects : ProjectData[] = [
     {
         title: "StochSD Homepage",
         image: stochsdwebpage,
-        tags: ["React", "JavaScript", "HTML", "CSS"],
+        tags: ["React", "JavaScript", "CSS"],
         desc: "Made StochSD's official webpage in React.",
         time: "2019",
         links: [{
-            "name": "Test it in Codepen",
-            "href": "https://codepen.io/MrArne/pen/OJPOzea"
+            "name": "StochSD Homepage",
+            "href": "https://stochsd.sourceforge.io/homepage/#/"
         }]
     },
     {
@@ -76,9 +73,20 @@ let projects : ProjectData[] = [
         }]
     },
     {
+        title: "GreyKeep Firefox Addon",
+        image: greykeepimg,
+        tags: ["JavaScript"],
+        desc: "Firefox addon that changes background in Google Keep from white to a light grey. I prefered to have some contrast between background and the notes so I added it for myself.",
+        time: "2018 Oct",
+        links: [{
+            "name": "GreyKeep",
+            "href": "https://addons.mozilla.org/en-US/firefox/addon/greykeep/"
+        }]
+    },
+    {
         title: "Old Portfolio website",
         image: oldportfolioimg,
-        tags: ["PHP", "JavaScript", "CSS", "JSON"],
+        tags: ["PHP", "CSS", "JSON"],
         desc: "The website is hosted for free on herokuapp and therefore takes a few seconds to load.",
         time: "2017",
         links: [
