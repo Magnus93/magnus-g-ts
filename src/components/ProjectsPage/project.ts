@@ -29,7 +29,7 @@ let projects : ProjectData[] = [
         title: "Portfolio website",
         image: portfoliopage,
         tags: ["React", "TypeScript", "SCSS"],
-        desc: "This portfolio webpage was made by me. It is a responsive website that changes for smaller screens. This can be tested in the browser by making the browser narrower.",
+        desc: "This portfolio webpage was made by me. It is a responsive website that changes for smaller screens. This can be tested in the browser by making the browser narrower. The webpage also includes a dark mode. you can try it by clicking in the top right corner.",
         time: "2021 Feb"
     },
     {
