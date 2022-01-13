@@ -35,7 +35,7 @@ class ProjectsPage extends React.Component {
             acc[0].count++;
             return acc;
         };
-        let allTags : TagCounter[] = projects.reduce(reducer, [{name: "All Projects", keyword: "", count: 0}]);
+        let allTags : TagCounter[] = projects.reduce(reducer, [{name: "All Projects", keyword: "", count: 0}]).sort((a, b) => b.count - a.count)
         return allTags;
     }
 
