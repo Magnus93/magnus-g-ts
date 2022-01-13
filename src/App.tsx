@@ -33,10 +33,10 @@ class App extends React.Component<{}, {theme: string}> {
             <span></span>
           </label>
           <nav className="nav">
-            <ul className="nav-list">
-              <li><a href="/about">About Me</a></li>
-              <li><a href="/projects">Projects</a></li>
-            </ul>
+            <div className="nav-list">
+              <a href="/about"><span>About Me</span></a>
+              <a href="/projects"><span>Projects</span></a>
+            </div>
           </nav>
           <button className="theme-toogle" onClick={this.toogleTheme.bind(this)}>
             <img src={this.state.theme === "light" ? darkmodeIcon : lightmodeIcon}/>
