@@ -20,7 +20,9 @@
   --bx-shadow: 0px 3px 8px var(--clr-shadow);
   --invert-svg: 0;
 }
-
+html {
+  overflow: auto;
+}
 body {
   margin: 0;
   padding: 0;
