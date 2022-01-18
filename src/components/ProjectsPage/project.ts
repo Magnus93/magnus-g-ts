@@ -36,7 +36,7 @@ let projects : ProjectData[] = [
     {
         title: "StochSD",
         image: stochsdimg,
-        tags: ["JavaScript", "HTML", "CSS", "NW.js", "Node.js"],
+        tags: ["JavaScript", "HTML", "CSS", "NW.js"],
         desc: "I continued development on a Open Source Visual Programming Language for Stochastic System Dynamics. I worked to remove bugs and make the program more pedagogical.",
         time: "2018 - 2020",
         links: [
@@ -86,7 +86,7 @@ let projects : ProjectData[] = [
     {
         title: "Old Portfolio website",
         image: oldportfolioimg,
-        tags: ["PHP", "CSS", "JSON"],
+        tags: ["PHP", "CSS"],
         desc: "The website is hosted for free on herokuapp and therefore takes a few seconds to load.",
         time: "2017",
         links: [
