@@ -54,13 +54,9 @@
         font-size: 1em;
     }
 }
-.lightTheme .link:hover,
-.lightTheme .link:focus {
+.link:hover,
+.link:focus {
     box-shadow: var(--bx-shadow);
-}
-.darkTheme .link:hover,
-.darkTheme .link:focus {
-    box-shadow: inset var(--bx-shadow);
 }
 
 /* For Desktop */
