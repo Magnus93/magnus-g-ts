@@ -92,15 +92,13 @@
             content: none;
         }
         &__infodiv {
-            width: 50%;
+            width: 37%;
             box-sizing: border-box;
             padding: 0em 1em;
         }
         &__imgdiv {
-            width: 50%;
+            width: 66%;
             box-sizing: border-box;
-            padding: 1em;
-            border: 1px solid var(--clr-bg-soft);
         }
     }
 }
