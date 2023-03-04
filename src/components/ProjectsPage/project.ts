@@ -12,20 +12,20 @@ import themechooser from "./img/theme-chooser.png";
 import kronkgame from "./img/kronkgame.jpg";
 
 interface Link {
-    name : string, 
-    href : string
+    name: string,
+    href: string
 }
 
 export interface ProjectData {
-    title : string,
-    image : string,
-    tags : string[],
-    desc : string,
+    title: string,
+    image: string,
+    tags: string[],
+    desc: string,
     time?: string,
     links?: Link[]
 }
 
-let projects : ProjectData[] = [
+let projects: ProjectData[] = [
     {
         title: "Portfolio website",
         image: portfoliopage,
@@ -87,14 +87,8 @@ let projects : ProjectData[] = [
         title: "Old Portfolio website",
         image: oldportfolioimg,
         tags: ["PHP", "CSS"],
-        desc: "The website is hosted for free on herokuapp and therefore takes a few seconds to load.",
+        desc: "The website is unfortunatly not up anymore.",
         time: "2017",
-        links: [
-            {
-                "name": "Link", 
-                "href": "http://magnusg.herokuapp.com/index.php"
-            }
-        ]
     },
     {
         title: "English to Scottish Translator",
@@ -104,7 +98,10 @@ let projects : ProjectData[] = [
         time: "2017 Mar",
         links: [{
             name: "Try it yerself!",
-            href: "https://english-to-scottish.herokuapp.com/"
+            href: "https://english-to-scottish.pages.dev/"
+        }, {
+            name: "Source code",
+            href: "https://github.com/Magnus93/english-to-scottish"
         }]
     },
     {
@@ -115,8 +112,12 @@ let projects : ProjectData[] = [
         time: "2017 Jan",
         links: [
             {
-                name: "Try it in Chrome - NOT FIREFOX", 
-                href: "https://matrixscreen.herokuapp.com/"
+                name: "Try it in Chrome - NOT FIREFOX",
+                href: "https://matrixscreen.pages.dev/"
+            },
+            {
+                name: "Source code",
+                href: "https://github.com/Magnus93/matrixscreen"
             }
         ]
     },
@@ -128,8 +129,12 @@ let projects : ProjectData[] = [
         time: "2016 Dec",
         links: [
             {
-                name: "Fly like a tree!", 
-                href: "https://flying-christmas-tree.herokuapp.com/"
+                name: "Fly like a tree!",
+                href: "https://flying-tree.pages.dev/"
+            },
+            {
+                name: "Source code",
+                href: "https://github.com/Magnus93/flying-tree"
             }
         ]
     },
