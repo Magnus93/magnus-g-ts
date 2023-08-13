@@ -87,7 +87,7 @@ let projects: ProjectData[] = [
         title: "Old Portfolio website",
         image: oldportfolioimg,
         tags: ["PHP", "CSS"],
-        desc: "The website is unfortunatly online anymore.",
+        desc: "The website is unfortunatly not online anymore.",
         time: "2017",
     },
     {
